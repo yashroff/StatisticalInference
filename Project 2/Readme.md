@@ -5,15 +5,15 @@ July 11, 2016
 # Overview
 
 Load the ToothGrowth data and perform some basic exploratory data analyses. 
-
 * Provide a basic summary of the data.
-* Use confidence intervals and/or hypothesis tests to compare tooth growth by supp and dose. (Only use the techniques from class, even if there's other approaches worth considering)
-* State your conclusions and the assumptions needed for your conclusions.
+* Use confidence intervals and/or hypothesis tests to compare tooth growth by supp and dose. 
 
-# Assumptions: 
+# My Assumptions: 
 Assume the underlying data is normally distributed and that the sample is representative of the population. Also assume the guinea pigs were randomized.
 
-# Load/summarize the data
+# My Steps:
+
+## Load/summarize the data
 
 ```r
 library(ggplot2)
@@ -69,7 +69,7 @@ ggplot (aes(x=dose, y = len), data = ToothGrowth) +
 
 It appears that length is affected by both dose and supp. First, test the alternate hypothesis that supp affects tooth length.
 
-# Use confidence intervals to compare tooth growth by supp
+## Use confidence intervals to compare tooth growth by supp
 
 Create independent group T interval to compare the 2 values of Supp (OJ and VC).
 
@@ -94,7 +94,7 @@ So the difference in length between OJ and VC is between these 2 values. Since 0
 
 Next we test the alternate hypothesis that dose affects tooth length.
 
-# Use confidence intervals to compare tooth growth for different doses.
+## Use confidence intervals to compare tooth growth for different doses.
 
 
 ```r
